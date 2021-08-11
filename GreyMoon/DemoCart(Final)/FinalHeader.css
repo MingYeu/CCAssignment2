@@ -1,0 +1,384 @@
+﻿body {
+
+}
+
+.content1 {
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    padding: 30px 20px;
+    min-height: calc(100vh - 100px - 300px);
+}
+
+    .content1 .text {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #202020;
+    }
+
+.wrapper {
+    margin: 0 auto;
+    
+}
+
+header {
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    z-index: 12;
+    position: absolute;
+   margin-top:-100px;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+    .logo a {
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: bignoodletitling;
+        color: #fff;
+        letter-spacing: 5px;
+    }
+
+nav {
+    float: right;
+    margin-top: 20px;
+}
+
+    nav a {
+        text-decoration: none;
+        font-family: bignoodletitling;
+        letter-spacing: 4px;
+        font-size: 20px;
+        margin: 0 10px;
+        color: #fff;
+    }
+
+.menu {
+    position: relative;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.ani-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+    transform: translateY(-3em);
+    z-index: -1;
+    transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    background-color: #262626;
+}
+
+.menu:focus .ani-menu,
+.menu:focus-within .ani-menu,
+.menu:hover .ani-menu {
+    visibility: visible;
+    opacity: 1;
+    z-index:1;
+    transform: translateY(0);
+    transition-delay: 0s,0s,0.3s;
+    padding: 0;
+}
+
+.text_hover:hover {
+    background: white;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+}
+
+ani-menu a {
+    width: 70px;
+    padding: 0;
+}
+
+.ani-menu a:hover {
+    background: white;
+    color: black;
+}
+
+nav ul, nav ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul {
+    text-align: center;
+}
+
+    nav > ul > li {
+        display: inline-block;
+        border-left: 1px solid #fff;
+    }
+
+        nav > ul > li:first-child {
+            border-left: none;
+        }
+
+.banner-area {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    background-image: url('art_bg2.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.inner {
+    margin-top: 50px;
+}
+
+/* ************************* For the SlideShow ************************************/
+.mySlides {
+    display: none;
+
+}
+
+.img_slide{
+   
+    vertical-align: middle;
+    height: 300px;
+    margin-bottom:50px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    margin-top: 100px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 291px;
+    margin-bottom: 50px;
+}
+
+
+/* Caption text */
+.slide_text {
+    color: black;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 80px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    font-family: bignoodletitling;
+    width: 40%;
+    margin-left: 30%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    display:none;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.0s;
+    animation-name: fade;
+    animation-duration: 1.0s;
+}
+
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+.footer {
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    flex-flow:row wrap;
+    padding:50px;
+    color:#fff;
+
+    margin-top: 180px;
+    text-align: justify;
+    line-height: 20px;
+    font-family: bignoodletitling;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #262626;
+float:left;
+}
+
+    .footer > * {
+        flex: 1 100%;
+    }
+
+.l-footer {
+    font-family: bignoodletitling;
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+
+
+.footer ul {
+    font-family: bignoodletitling;
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    font-family: bignoodletitling;
+    text-decoration: none;
+}
+
+.r-footer {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: bignoodletitling;
+}
+
+    .r-footer > * {
+        flex: 1 50%;
+        margin-right: 1.25em;
+    }
+
+.footer_box a {
+    color: #999;
+    font-family: bignoodletitling;
+}
+
+.h-box {
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+.b-footer {
+    font-family: bignoodletitling;
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+}
+
+.l-footer p {
+    font-family: bignoodletitling;
+    padding-right: 20%;
+    color: #999;
+}
+
+@media screen and (min-width: 600px) {
+    .r-footer > * {
+        flex: 1;
+    }
+
+    .features {
+        flex-grow: 2;
+    }
+
+    .l-footer {
+        flex: 1 0px;
+    }
+
+    .r-footer {
+        flex: 2 0px;
+    }
+
+    .l-footer h1 {
+        font-family: bignoodletitling;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: bignoodletitling;
+        color: #fff;
+        letter-spacing: 5px;
+        font-weight: 100;
+    }
+
+    .r-footer h2 {
+        font-weight: 100;
+        font-family: bignoodletitling;
+    }
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    background: rgb(20, 19, 19);
+    bottom: 40px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 100%;
+    padding: 5px 5px;
+}
+
+.gotop h1 {
+    font-size: 20px;
+    font-family: bignoodletitling;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.gotop :hover {
+    opacity: 0.7;
+}

@@ -1,0 +1,35 @@
+﻿body {
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    width: 16.5%;
+    background-color: #262626;
+    color: #FFFFF8;
+}
+
+
+
+td {
+    text-align: left;
+    padding: 10px 5px;
+    width: 16.5%;
+    
+}
+
+table.atc_dtlist td {
+    border: none;
+    border-bottom: 2px solid #262626;
+}
+
+tr.atd_t2_column td {
+    text-align: right;
+}
+

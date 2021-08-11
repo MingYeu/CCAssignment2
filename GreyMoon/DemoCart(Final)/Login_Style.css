@@ -1,0 +1,282 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url(5.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    position: sticky;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+.loginbox {
+    box-sizing: border-box;
+    background: rgba(255, 255, 255,0.5);
+    float: left;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+
+.cb1 {
+    width: 110px;
+    height: 105px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+    .cb1:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1);
+    }
+.overlay2 {
+    position: absolute;
+    
+    opacity: 0;
+    transition: .5s ease;
+    font-weight: bold;
+    font-size: 14px;
+}
+.artist_text {
+    margin-left: 150px;
+    margin-top: -115px;
+}
+.artlover_text {
+    margin-left: 135px;
+    margin-top: -115px;
+}
+.overlay {
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: -120px;
+    margin-top: 50px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+
+.container:hover .overlay{
+    opacity:2.0;
+    background:powderblue;
+    
+}
+
+.container:hover .image {
+    opacity: 0.3;
+    
+}
+
+
+.image_artist{
+    width:45%;
+    background-color:white;
+    padding-top:7px;
+    height:180px;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+.artist{
+    width:154px;
+    height:145px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+   
+    margin-left:320px;
+    margin-top:350px;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 620px;
+    padding: 80px 40px;
+}
+
+
+.login_input{
+
+    margin-top:20px;
+}
+img{
+    border:none;
+    border-radius:100%;
+}
+.right {
+    margin-top: 350px;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    padding: 80px 40px;
+    background-color:rgba(5, 18, 45,0.5);
+
+    text-align:center;
+}
+
+h2{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:rgba(0, 0, 0,0.6);
+    margin-top:-34px;
+    margin-bottom:20px;
+
+}
+
+h1 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color:rgb(193, 239, 239);
+    font-style: inherit;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 88px;
+    line-height: 54px;
+    text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+    margin-top: 80px;
+    text-align: center;
+}
+
+.lblusername, .lblpassword {
+    font-weight: bold;
+    color: black;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.txtusername, .txtpassword, .btnsubmit{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.txtusername, .txtpassword {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    background-color: transparent;
+    background-color: white;
+}
+
+.txtusername:hover, .txtpassword:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        outline: none;
+}
+
+    .txtpassword:focus, .txtusername:focus {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        outline: none;
+    }
+
+::placeholder {
+    color: rgba(0, 0, 0,0.5);
+}
+
+.btnsubmit{
+    border:none;
+    outline:none;
+    height:40px;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    background-color:rgba(0, 0, 0,0.5);
+    border-radius:20px;
+    transition:.3s ease-in-out;
+}
+
+.btnsubmit:hover {
+        background-color: rgba(255, 255, 255,0.5);
+        color: rgba(0, 0, 0,0.5);
+}
+
+.btnforget{
+    font-size:12px;
+    font-weight:700;
+    text-decoration:none;
+    color:black;
+}
+
+.btnforget:hover{
+    text-decoration:underline;
+}
+
+h3 {
+   font-size:40px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: -22px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.lbldetails{
+    
+    font-style:oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+    color:white;
+}
+
+.chbpass{
+   margin-top:-343px
+}
+
+.btnregister {
+    border: none;
+    width:180px;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    margin-top:20px;
+    margin-bottom:10px;
+
+}
+
+.btnregister:hover {
+    background-color: white;
+    color: rgba(5, 18, 45,0.5);
+}
+
+.btnregister2 {
+    border: none;
+    width: 180px;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btnregister2:hover {
+    background-color: white;
+    color: rgba(5, 18, 45,0.5);
+}
+
+.lbldetails2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+}

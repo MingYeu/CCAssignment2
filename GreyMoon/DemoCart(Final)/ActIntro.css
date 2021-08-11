@@ -1,0 +1,152 @@
+﻿body {
+}
+.container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "cover content";
+    box-shadow: -2px 0px 33px 0px rgba(0,0,0,0.75);
+    margin-top:140px;
+    margin-left:150px;
+    margin-bottom:50px;
+}
+
+.cover {
+    grid-area: cover;
+    height: 80vh;
+    background: #efefef;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content {
+    grid-area: content;
+    background: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    background-image: url('plas_act.jpg');
+}
+.plastic_content {
+    grid-area: content;
+    background: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    background-image: url('plas_act.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.nav {
+    margin: 10px 20px;
+    height: 40px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: gray;
+    text-align: center;
+}
+
+.content-body {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.right_content-body {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right_black-label {
+    width: 80%;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top:-520px;
+}
+
+    .right_black-label p {
+        font-size: 16px;
+        color: black;
+        width: 70%;
+    }
+
+.black-label {
+    width: 80%;
+    text-align:justify;
+    margin-left:50px;
+}
+
+    .black-label p {
+        font-size: 16px;
+        color: black;
+        width: 70%;
+    }
+
+.title {
+    font-size: 64px;
+}
+
+.prix {
+    margin: 50px 0px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid rgb(255,177,33);
+}
+
+    .prix span {
+        padding-left: 10px;
+    }
+
+.crt {
+    color: gray;
+    left: 2px;
+    border-bottom: 1px solid rgb(177,177,177);
+}
+
+.active {
+    color: black;
+    position: relative;
+    transform: translateX(60px);
+}
+
+    .active::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 67px;
+        right: 117%;
+        top: 45%;
+        background-color: #555;
+        height: .2em;
+        min-height: 1px;
+        z-index: 1;
+    }
+
+.right_cover {
+    grid-area: cover;
+    height: 80vh;
+    background-image: url('vis_act.jpg');
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+.right_content {
+    grid-area: content;
+    background: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}

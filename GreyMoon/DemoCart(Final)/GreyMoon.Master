@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GreyMoon.Master.cs" Inherits="DemoCart.GreyMoon" %>
+
+<%@ Register TagPrefix="Superstatus" TagName="Status" Src="~/Labels.ascx" %>
+
+<!DOCTYPE html>
+
+<style type="text/css">
+    .Uploadbtn {
+        font-size: 20px;
+        font-family: bignoodletitling;
+        color: #fff;
+        letter-spacing: 5px;
+        border: none;
+        background-color: inherit;
+        padding: 0px 10px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .Cartbtn{
+        font-size: 20px;
+        font-family: bignoodletitling;
+        color: #fff;
+        letter-spacing: 5px;
+        border: none;
+        border-left: 1px solid #FFFFF8;
+        background-color: inherit;
+        padding: 0px 10px;
+        cursor: pointer;
+        display: inline-block;
+    }
+</style>
+
+
+<html>
+<head runat="server">
+    <link href="FinalHeader.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="box-area">
+                <header>
+                    <div class="wrapper">
+                        <div class="logo">
+                            <a href="Final_AboutUs.aspx">GREY MOON</a>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li class="menu"><a href="ProductList.aspx">Home</a></li>
+                                <li class="menu"><a href="ArtistList.aspx">Artist</a></li>
+                                <li class="menu"><a href="Final_AboutUs.aspx">About Us</a></li>
+                                <li class="menu"><a href="FinalPlasticAct.aspx">Type Of Art</a>
+                                </li>
+
+                                <li class="menu"><a href="#">Follow Us</a>
+                                    <ul class="ani-menu">
+                                        <li><a href="https://www.facebook.com/Grey-Moon-187237172835558">Facebook</a></li>
+                                        <li><a href="https://www.instagram.com/__grey_moon_/">Instagram</a></li>
+                                        <li><a href="https://twitter.com/rsf_art">Twitter</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <asp:Button ID="Button" runat="server" Text="Upload" CssClass="Uploadbtn" /></li>
+
+                                <%-- Edit --%>
+                                <asp:Button ID="Button1" runat="server" Text="Cart" CssClass="Cartbtn" OnClick="Button1_Click" /></li>
+                                <asp:Button ID="Button2" runat="server" Text="Payment History" CssClass="Cartbtn" OnClick="Button2_Click" /></li>
+                            
+                            
+                            <li class="menu"><a href="Login.aspx">Log Out</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+            <%--Showing the Slideshow --%>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="act_bg4.jpg" style="width: 100%" class="img_slide" />
+                    <div class="slide_text">
+                        <h2>About Us</h2>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="act_bg6.jpg" style="width: 100%" class="img_slide" />
+                    <div class="slide_text">
+                        <h2>Artist</h2>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="act_bg5.jpg" style="width: 100%" class="img_slide" />
+                    <div class="slide_text">
+                        <h2>Art</h2>
+                    </div>
+                </div>
+
+                <div style="text-align: center; display: none;">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <Superstatus:Status ID="ctlStatus" runat="server"></Superstatus:Status>
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" --> ">
+                <CurrentNodeStyle ForeColor="#333333" />
+                <NodeStyle Font-Bold="True" ForeColor="#284E98" />
+                <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
+                <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />
+            </asp:SiteMapPath>
+
+            <br />
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="gotop">
+            <a class="gotopbtn" href="#">
+                <h1>TOP</h1>
+            </a>
+        </div>
+        <footer class="footer">
+            <div class="l-footer">
+                <h1>GREY MOON</h1>
+                <p>Grey Moon is a website that display artworks. Usually, the online gallery is run as a business, with the purpose of displaying the artwork being to promote it to potential buyers. Other variations include: An online art market for collectors also known as an online secondary market</p>
+                <p>
+                    Our Mission is to increase the public enjoyment and understand the art from the present say and of international modern and contempory art
+                </p>
+            </div>
+            <ul class="r-footer">
+                <li>
+                    <h2>Follow Us</h2>
+                    <ul class="footer_box">
+                        <li><a href="https://www.facebook.com/Grey-Moon-187237172835558">Facebook</a></li>
+                        <li><a href="https://twitter.com/rsf_art">Twitter</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                    </ul>
+                </li>
+                <li class="features">
+                    <h2>Information</h2>
+                    <ul class="footer_box h-box">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">Tickets</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Legal</h2>
+                    <ul class="footer_box">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Contract</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="b-footer">
+            </div>
+        </footer>
+    </form>
+    <script>
+        var slideIndex = 0;
+
+
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+
+
+    </script>
+</body>
+</html>

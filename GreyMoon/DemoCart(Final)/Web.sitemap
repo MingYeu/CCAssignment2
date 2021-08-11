@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+    <siteMapNode url="~/ProductList.aspx" title="HomePage"  description="">
+      <siteMapNode url="~/Demo.aspx" title="Upload Art"  description="" />
+      <siteMapNode url="~/productDetails.aspx" title="Product Details"  description="" />
+      <siteMapNode url="~/FinalPlasticAct.aspx" title="Type of Art"  description="" />
+      <siteMapNode url="~/Final_AboutUs.aspx" title="About Us"  description="" />
+      <siteMapNode url="~/AddtoCart.aspx" title="View Cart"  description="" />
+      <siteMapNode url="~/PurchaseHistory.aspx" title="Purchase History"  description="" />
+      <siteMapNode url="~/Testing_Artist.aspx" title="Artist Detail"  description="" />
+      <siteMapNode url="~/ArtistList.aspx" title="Artist List"  description="" />
+      <siteMapNode url="~/History.aspx" title="Payment History"  description="" />
+
+    </siteMapNode>
+
+</siteMap>
